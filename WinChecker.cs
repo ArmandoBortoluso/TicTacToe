@@ -1,14 +1,15 @@
 namespace TicTacToe {
     class WinChecker {
 
-        public static bool CheckWin(int[] lastcoord, string symbol) {
+        public static async bool CheckWin() {
 
-            int x, y;
+            int[] coord = new int[2];
 
-            x = lastcoord[0];
-            y = lastcoord[1];
 
             //Check horizontal line
+
+
+
 
             
 
