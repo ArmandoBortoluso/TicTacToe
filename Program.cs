@@ -16,7 +16,7 @@ namespace TicTacToe {
             short player = 1;
             bool tryParse = false;
             short pos;
-            bool positionAvailable = false;
+            bool positionAvailable = true;
 
             Board.CleanBoard();
             Console.Write("Player one, select symbol: ");
@@ -43,13 +43,14 @@ namespace TicTacToe {
                     Position.FindCoordinates(pos, coord);
                     symbol = Board.CheckState(coord);
 
-                    if(String.Equals(symbol, " ")) {
-                        positionAvailable = true;
+                    positionAvailable = String.IsNullOrWhiteSpace(symbol);
+                    if(!positionAvailable) {
+                        Console.WriteLine("Sorry, position already taken!");
                     }
                 }
                 
                 
-                }while(tryParse == false && positionAvailable == false);
+                }while(tryParse == false || positionAvailable == false);
                 
                 if(player == 1) {
                     symbol = playerOne.Symbol;
@@ -57,7 +58,7 @@ namespace TicTacToe {
                 } else {
                     symbol =playerTwo.Symbol;
                 }
-
+                
                 Board.UpdateBoard(coord, symbol);
                 victory = WinChecker.CheckWin();
 
