@@ -12,7 +12,8 @@ namespace TicTacToe {
             string symbol;
             bool victory = false;
             bool draw = false;
-            int availablePositions = 9;
+            short availablePositions = 9;
+            short player = 1;
 
             Console.Write("Player one, select symbol: ");
             symbol = Console.ReadLine();

@@ -22,12 +22,7 @@ namespace TicTacToe {
             board[x,y] = symbol;
         }
 
-        public static string CheckState(int[] coord) {
-
-            int x,y;
-
-            x = coord[0];
-            y = coord[1];
+        public static string CheckState(int x, int y) {
 
             return(board[x,y]);
 
