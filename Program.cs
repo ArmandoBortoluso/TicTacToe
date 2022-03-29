@@ -17,6 +17,7 @@ namespace TicTacToe {
             bool tryParse = false;
             short pos;
 
+            Board.CleanBoard();
             Console.Write("Player one, select symbol: ");
             symbol = Console.ReadLine();
 
@@ -68,6 +69,7 @@ namespace TicTacToe {
                 Console.WriteLine("It was a draw!!!!");
             } else {
                 Console.WriteLine("Well done Player " + player + " , you won!!!");
+                Renderer.Render();
             }
 
             

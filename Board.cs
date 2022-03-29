@@ -3,7 +3,7 @@ namespace TicTacToe {
 
         private static string[,] board = new string[3,3];
 
-        public static void CleanBoard(string[,] board) {
+        public static void CleanBoard() {
             for(int x = 0; x < 3; x++) {
                 for(int y = 0; y < 3; y++) {
 
