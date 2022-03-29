@@ -27,6 +27,15 @@ namespace TicTacToe {
 
 
         }
+        public static string CheckState(short[] coord) {
+            
+            short x, y;
+            x = coord[0];
+            y = coord[1];
+            return(board[x,y]);
+
+
+        }
 
 
 

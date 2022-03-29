@@ -16,6 +16,7 @@ namespace TicTacToe {
             short player = 1;
             bool tryParse = false;
             short pos;
+            bool positionAvailable = false;
 
             Board.CleanBoard();
             Console.Write("Player one, select symbol: ");
@@ -30,12 +31,25 @@ namespace TicTacToe {
 
             do{
                 Renderer.Render();
+
                 do{
+                    
+                positionAvailable = false;
                 Console.Write("Player " + player + " please go, select position:");
                 tryParse = short.TryParse(Console.ReadLine(), out pos);
-                }while(tryParse == false);
 
-                Position.FindCoordinates(pos, coord);
+                if(tryParse) {
+
+                    Position.FindCoordinates(pos, coord);
+                    symbol = Board.CheckState(coord);
+
+                    if(String.Equals(symbol, " ")) {
+                        positionAvailable = true;
+                    }
+                }
+                
+                
+                }while(tryParse == false && positionAvailable == false);
                 
                 if(player == 1) {
                     symbol = playerOne.Symbol;
