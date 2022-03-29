@@ -16,6 +16,7 @@ namespace TicTacToe {
                     win = true;
                     return win;
                 }
+            }
 
             
             //Check Verticals            
@@ -82,4 +83,3 @@ namespace TicTacToe {
 
 
     }
-}

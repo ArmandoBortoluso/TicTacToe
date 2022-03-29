@@ -13,11 +13,10 @@ namespace TicTacToe {
             }
         }
 
-        public static void UpdateBoard(int[] coord, string symbol) {
-            int x, y;
+        public static void UpdateBoard(short[] coord, string symbol) {
 
-            x = coord[0];
-            y = coord[1];
+            short x = coord[0];
+            short y = coord[1];
 
             board[x,y] = symbol;
         }

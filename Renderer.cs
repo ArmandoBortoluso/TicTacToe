@@ -1,36 +1,25 @@
 namespace TicTacToe {
     class Renderer {
 
-        public static async void Render() {
-
-            int[] coord = new int[2];
+        public static void Render() {
             string symbol;
 
-            for(int i = 0; i < 3; i++) {
+            for(short y = 0; y < 3; y++) {
+                for(short x = 0; x < 3; x++) {
 
-                coord[0] = i;
-
-                for(int j = 0; j < 3; j++) {
-
-                    coord[1] = j;
-
-                    symbol = Board.CheckState(coord);
-
+                    symbol = Board.CheckState(x, y);
                     Console.Write(symbol);
-                    
-                    if(j != 2) {
+
+                    if(x < 2) {
                         Console.Write("|");
+                    } else {
+                        Console.Write("\n");
                     }
-
                 }
-                Console.WriteLine("");
             }
-
-
-        }
-        
-
-
+    
 
     }
+
+}
 }

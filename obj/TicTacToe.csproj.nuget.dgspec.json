@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/arman/Documents/TicTacToe/TicTacToe.csproj": {}
+    "C:\\Users\\Armando\\Documents\\DEV\\TicTacToe\\TicTacToe.csproj": {}
   },
   "projects": {
-    "/home/arman/Documents/TicTacToe/TicTacToe.csproj": {
+    "C:\\Users\\Armando\\Documents\\DEV\\TicTacToe\\TicTacToe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/arman/Documents/TicTacToe/TicTacToe.csproj",
+        "projectUniqueName": "C:\\Users\\Armando\\Documents\\DEV\\TicTacToe\\TicTacToe.csproj",
         "projectName": "TicTacToe",
-        "projectPath": "/home/arman/Documents/TicTacToe/TicTacToe.csproj",
-        "packagesPath": "/home/arman/.nuget/packages/",
-        "outputPath": "/home/arman/Documents/TicTacToe/obj/",
+        "projectPath": "C:\\Users\\Armando\\Documents\\DEV\\TicTacToe\\TicTacToe.csproj",
+        "packagesPath": "C:\\Users\\Armando\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Armando\\Documents\\DEV\\TicTacToe\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/arman/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Armando\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
