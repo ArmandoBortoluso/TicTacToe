@@ -85,6 +85,8 @@ namespace TicTacToe {
             } else {
                 Console.WriteLine("Well done Player " + player + " , you won!!!");
                 Renderer.Render();
+                Console.WriteLine("Press any key to quit.");
+                Console.ReadLine();
             }
 
             
